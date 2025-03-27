@@ -1,5 +1,5 @@
 {
-  "image": "ubuntu-latest",
-  "features": {
-  }
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
 }
