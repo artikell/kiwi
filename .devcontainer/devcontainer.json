@@ -1,8 +1,5 @@
 {
-  "image": "ubuntu:latest",
+  "image": "ubuntu-latest",
   "features": {
-    "ghcr.io/devcontainers-extra/features/cmake:1": {
-      "version": "latest"
-    }
   }
 }
