@@ -22,6 +22,7 @@ ExternalProject_Add(
         DOWNLOAD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/download"
         DOWNLOAD_NAME "fmt-10.1.1.zip"
         SOURCE_DIR ${FMT_SOURCES_DIR}
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

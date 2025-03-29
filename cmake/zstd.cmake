@@ -17,6 +17,7 @@ ExternalProject_Add(
         SOURCE_DIR ${zstd_SOURCES_DIR}
         DOWNLOAD_NO_PROGRESS 1
         SOURCE_SUBDIR build/cmake
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

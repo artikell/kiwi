@@ -17,6 +17,7 @@ ExternalProject_Add(
         DOWNLOAD_NO_PROGRESS 1
         ${EXTERNAL_PROJECT_LOG_ARGS}
         SOURCE_SUBDIR build/cmake
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

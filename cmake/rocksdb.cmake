@@ -13,8 +13,9 @@ ExternalProject_Add(
         DEPENDS gflags snappy zlib lz4 zstd
         GIT_REPOSITORY https://github.com/facebook/rocksdb.git
         GIT_TAG v9.11.1
-        GIT_SHALLOW true
         SOURCE_DIR ${ROCKSDB_SOURCES_DIR}
+        GIT_SHALLOW true
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

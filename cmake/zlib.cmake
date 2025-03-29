@@ -14,6 +14,8 @@ ExternalProject_Add(
         GIT_TAG         "v1.2.8"
         GIT_SHALLOW     true
         SOURCE_DIR      ${ZLIB_SOURCES_DIR}
+        GIT_SHALLOW true
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

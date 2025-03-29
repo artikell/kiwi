@@ -14,8 +14,9 @@ ExternalProject_Add(
         DEPENDS snappy
         GIT_REPOSITORY "https://github.com/google/leveldb.git"
         GIT_TAG "1.23"
-        GIT_SHALLOW true
         SOURCE_DIR ${LEVELDB_SOURCES_DIR}
+        GIT_SHALLOW true
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

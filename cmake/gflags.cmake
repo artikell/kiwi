@@ -22,6 +22,7 @@ ExternalProject_Add(
         DOWNLOAD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/download"
         DOWNLOAD_NAME "gflags-2.2.2.zip"
         SOURCE_DIR ${GFLAGS_SOURCES_DIR}
+        UPDATE_DISCONNECTED 1
         CMAKE_ARGS
         ${EXTERNAL_GENERATOR}
         ${EXTERNAL_PROJECT_C}
