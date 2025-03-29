@@ -73,7 +73,7 @@ function build() {
           -DGIT_COMMIT_ID=$SHORT_COMMIT_ID \
           -DKIWI_BUILD_DATE="$BUILD_TIME" \
           -DKIWI_GIT_COMMIT_ID="$SHORT_COMMIT_ID" \
-          ${CMAKE_FLAGS} -S . -B ${PREFIX}
+          ${CMAKE_FLAGS} -G Ninja -S . -B ${PREFIX}
     cmake --build ${PREFIX} -- ${MAKE_FLAGS} -j ${CPU_CORE}
 
     if [ $? -eq 0 ]; then
