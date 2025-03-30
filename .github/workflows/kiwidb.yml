@@ -67,7 +67,6 @@ jobs:
         run: |
           export LIBRARY_PATH=$(xcrun --show-sdk-path)/usr/lib
           export DYLD_LIBRARY_PATH=$(xcrun --show-sdk-path)/usr/lib
-          bash ./etc/script/build.sh --clear
           bash ./etc/script/build.sh --ninja --verbose
 
       - name: GTest
@@ -115,7 +114,6 @@ jobs:
 
       - name: Build
         run: |
-          bash ./etc/script/build.sh --clear
           bash ./etc/script/build.sh --ninja --verbose
 
       - name: GTest

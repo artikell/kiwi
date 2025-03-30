@@ -14,7 +14,7 @@ ExternalProject_Add(
         GIT_TAG "1.2.1"
         SOURCE_DIR ${Snappy_SOURCES_DIR}
         GIT_SHALLOW true
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

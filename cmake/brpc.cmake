@@ -24,7 +24,7 @@ ExternalProject_Add(
         DOWNLOAD_NAME "brpc-1.8.0.tar.gz"
         SOURCE_DIR ${BRPC_SOURCES_DIR}
         GIT_SHALLOW true
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

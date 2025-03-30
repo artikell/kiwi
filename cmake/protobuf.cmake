@@ -21,7 +21,6 @@ SET(PROTOBUF_PROTOC "${LIB_INSTALL_PREFIX}/bin/protoc")
 
 ExternalProject_Add(
         protobuf
-        UPDATE_COMMAND ""
         LOG_CONFIGURE 1
         LOG_BUILD 1
         LOG_INSTALL 1
@@ -33,7 +32,7 @@ ExternalProject_Add(
         DOWNLOAD_NAME "protobuf-3.18.0.tar.gz"
         SOURCE_DIR ${PROTOBUF_SOURCES_DIR}
         DOWNLOAD_NO_PROGRESS 1
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}

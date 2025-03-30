@@ -16,7 +16,7 @@ ExternalProject_Add(
         GIT_SHALLOW true
         SOURCE_DIR ${GTEST_SOURCES_DIR}
         GIT_SHALLOW true
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_GENERATOR}
         -DCMAKE_INSTALL_PREFIX=${LIB_INSTALL_PREFIX}

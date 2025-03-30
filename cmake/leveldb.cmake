@@ -16,7 +16,7 @@ ExternalProject_Add(
         GIT_TAG "1.23"
         SOURCE_DIR ${LEVELDB_SOURCES_DIR}
         GIT_SHALLOW true
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}
@@ -34,6 +34,5 @@ ExternalProject_Add(
         -DCMAKE_BUILD_TYPE=${THIRD_PARTY_BUILD_TYPE}
         ${EXTERNAL_GENERATOR}
         BUILD_COMMAND ${EXTERNAL_BUILD} -j${CPU_CORE}
-        UPDATE_COMMAND ""
         BUILD_BYPRODUCTS ${LEVELDB_LIBRARIES}
 )

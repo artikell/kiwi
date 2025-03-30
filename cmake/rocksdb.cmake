@@ -15,7 +15,7 @@ ExternalProject_Add(
         GIT_TAG v9.11.1
         SOURCE_DIR ${ROCKSDB_SOURCES_DIR}
         GIT_SHALLOW true
-        UPDATE_DISCONNECTED 1
+        UPDATE_COMMAND ""
         CMAKE_ARGS
         ${EXTERNAL_PROJECT_C}
         ${EXTERNAL_PROJECT_CXX}
@@ -44,6 +44,5 @@ ExternalProject_Add(
         -DUSE_RTTI=ON
         ${EXTERNAL_GENERATOR}
         BUILD_COMMAND ${EXTERNAL_BUILD} -j${CPU_CORE}
-        UPDATE_COMMAND ""
         BUILD_BYPRODUCTS ${ROCKSDB_LIBRARIES}
 )
